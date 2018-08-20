@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+		<Button android:id="@+id/getTitleButton"
+			 android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Get Title"
+			android:padding="8dp"
+			android:layout_margin="8dp"/>
+		<Button android:id="@+id/secondActivity"
+			  android:layout_toRightOf="@id/getTitleButton"
+			 android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Second Activity"
+			android:padding="8dp"
+			android:layout_margin="8dp"/>
+
+		<ListView android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/listView1"
+			android:layout_below="@id/getTitleButton"
+			android:minWidth="25px"
+			android:minHeight="25px"/>
+	</RelativeLayout>   
+
+</LinearLayout>
